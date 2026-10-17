@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "file_type": 1,
+  "time_division_raw": 480,
+  "time_division_kind": "ppqn",
+  "sequence_mode": "synchronous_tracks",
+  "track_count": 2,
+  "messages_scanned": 12,
+  "patch_message_counts_before_filters": {
+    "bank_select_msb": 1,
+    "bank_select_lsb": 2,
+    "program_change": 2
+  },
+  "filters": {
+    "channel": null,
+    "port": null
+  },
+  "returned_patch_messages": 5,
+  "events": [
+    {
+      "sequence": 1,
+      "tick": 0,
+      "track": 1,
+      "event_index": 3,
+      "port": 1,
+      "port_declared": true,
+      "channel": 1,
+      "message": "bank_select_msb",
+      "value_raw": 2,
+      "program_display_1_based": null,
+      "cross_track_same_tick": false
+    },
+    {
+      "sequence": 1,
+      "tick": 0,
+      "track": 1,
+      "event_index": 4,
+      "port": 1,
+      "port_declared": true,
+      "channel": 1,
+      "message": "bank_select_lsb",
+      "value_raw": 5,
+      "program_display_1_based": null,
+      "cross_track_same_tick": false
+    },
+    {
+      "sequence": 1,
+      "tick": 0,
+      "track": 1,
+      "event_index": 5,
+      "port": 1,
+      "port_declared": true,
+      "channel": 1,
+      "message": "program_change",
+      "value_raw": 10,
+      "program_display_1_based": 11,
+      "cross_track_same_tick": false
+    },
+    {
+      "sequence": 1,
+      "tick": 960,
+      "track": 1,
+      "event_index": 8,
+      "port": 1,
+      "port_declared": true,
+      "channel": 1,
+      "message": "program_change",
+      "value_raw": 11,
+      "program_display_1_based": 12,
+      "cross_track_same_tick": true
+    },
+    {
+      "sequence": 1,
+      "tick": 960,
+      "track": 2,
+      "event_index": 2,
+      "port": 1,
+      "port_declared": true,
+      "channel": 1,
+      "message": "bank_select_lsb",
+      "value_raw": 9,
+      "program_display_1_based": null,
+      "cross_track_same_tick": true
+    }
+  ],
+  "cross_track_same_tick_groups_before_filters": [
+    {
+      "sequence": 1,
+      "tick": 960,
+      "port": 1,
+      "channel": 1,
+      "tracks": [
+        1,
+        2
+      ]
+    }
+  ],
+  "sysex_messages_not_decoded": 0,
+  "reset_all_controllers_messages_not_interpreted": 0,
+  "interpretation": "File messages only; no effective bank, preset name, audible sound, device response or hardware diagnosis is inferred. Cross-track tie sort is presentation, not proven execution order."
+}
